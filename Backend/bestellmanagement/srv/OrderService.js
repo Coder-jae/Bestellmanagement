@@ -38,7 +38,7 @@ module.exports = async (srv) => {
     // Daten beim Start laden
     await loadCSVData();
 
-    // Mock für CDS-Read-Operationen
+    // Liest Dateien aus dem Mock Array
     srv.on('READ', 'Orders', async (req) => {
         return orders.map(order => ({
             ...order,
@@ -48,7 +48,7 @@ module.exports = async (srv) => {
 
     srv.on('READ', 'OrderItems', async (req) => orderItems);
 
-    // Action: Markiere Bestellung als versendet
+    // Markiere Bestellung als versendet
     srv.on('markAsShipped', async (req) => {
         const { orderID } = req.data;
         const order = orders.find(o => o.ID === orderID);

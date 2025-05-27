@@ -5,7 +5,7 @@ sap.ui.define([
 ], (Controller, MessageToast, JSONModel) => {
 	"use strict";
 
-	return Controller.extend("ui5.quickstart.App", {
+	return Controller.extend("ui5.bestellmanagement.App", {
 		onPress() {
 			MessageToast.show("Hello UI5!");
 			this.byId("app").to(this.byId("intro"));

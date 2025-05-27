@@ -1,0 +1,10 @@
+# UI5 spezifische Ignorierungen
+node_modules/
+dist/
+.tmp/
+
+# IDE und Betriebssystem-Dateien
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
