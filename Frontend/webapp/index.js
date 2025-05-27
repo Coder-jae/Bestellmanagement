@@ -4,6 +4,6 @@ sap.ui.define([
 	"use strict";
 
 	XMLView.create({
-		viewName: "ui5.bestellmanagement.App"
+		viewName: "ui5.bestellmanagement.view.App"
 	}).then((oView) => oView.placeAt("content"));
 });

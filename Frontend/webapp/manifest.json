@@ -1,6 +1,22 @@
 {
   "_version": "1.58.0",
   "sap.app": {
-    "id": "ui5.bestellmanagement"
+    "id": "ui5.bestellmanagement",
+    "dataSources": {
+      "invoiceRemote": {
+        "uri": "/order/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "2.0"
+        }
+      }
+    }
+  },
+  "sap.ui5": {
+    "models": {
+      "invoice": {
+        "dataSource": "invoiceRemote"
+      }
+    }
   }
 }

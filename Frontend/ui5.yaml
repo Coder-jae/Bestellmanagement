@@ -17,4 +17,4 @@ server:
     afterMiddleware: compression
     mountPath: /V2
     configuration:
-      baseUri: "http://localhost:4004/"
+      baseUri: "http://localhost:4004/odata/v4/
