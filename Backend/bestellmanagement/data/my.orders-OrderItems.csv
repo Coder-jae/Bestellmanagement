@@ -1,0 +1,6 @@
+ID,order_ID,material,quantity,isPicked
+a1111111-aaaa-4aaa-aaaa-aaaaaaaaaaaa,1d0f5a98-bb1f-4d4e-bd82-111111111111,USB-Kabel,10,false
+a2222222-aaaa-4aaa-aaaa-bbbbbbbbbbbb,1d0f5a98-bb1f-4d4e-bd82-111111111111,HDMI-Kabel,5,false
+b1111111-bbbb-4bbb-bbbb-cccccccccccc,2c1a7b89-cc2c-4e9b-adf3-222222222222,Monitor 24 Zoll,2,true
+b2222222-bbbb-4bbb-bbbb-dddddddddddd,2c1a7b89-cc2c-4e9b-adf3-222222222222,Tastatur,2,true
+c1111111-cccc-4ccc-cccc-eeeeeeeeeeee,3b8d9c10-dd3d-4aaf-bca1-333333333333,Notebook,1,true

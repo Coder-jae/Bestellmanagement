@@ -1,0 +1,4 @@
+ID,customer,deliveryDate,isShipped
+1d0f5a98-bb1f-4d4e-bd82-111111111111,ACME GmbH,2025-05-20,false
+2c1a7b89-cc2c-4e9b-adf3-222222222222,Musterfirma AG,2025-05-22,false
+3b8d9c10-dd3d-4aaf-bca1-333333333333,Testkunde KG,2025-05-25,true
