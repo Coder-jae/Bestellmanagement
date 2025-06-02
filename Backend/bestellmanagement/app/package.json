@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "@ui5/cli": "^4.0.16",
+    "ui5-middleware-simpleproxy": "^3.4.1"
+  }
+}

@@ -14,10 +14,19 @@
 		data-sap-ui-resource-roots='{
 			"ui5.bestellmanagement": "./"
 		}'>
-
+		fetch('/odata/v4/OrderService/Orders?$expand=Items')
+            .then(res => res.json())
+            .then(data => {
+                const list = document.getElementById('orderList');
+                data.value.forEach(order => {
+                    const li = document.createElement('li');
+                    li.textContent = `Order for ${order.customer} with ${order.Items.length} items`;
+                    list.appendChild(li);
+                });
+            });
 	</script>
 </head>
 <body>
-	<div>Hello World</div>
+	<body class="sapUiBody" id="content"></body>
 </body>
 </html>

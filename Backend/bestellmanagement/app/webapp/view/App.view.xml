@@ -1,0 +1,21 @@
+<mvc:View
+   controllerName="ui5.bestellmanagement.controller.App"
+   xmlns="sap.m"
+   xmlns:mvc="sap.ui.core.mvc">
+
+   <VBox>
+      <Button
+         text="Say Hello"
+         press=".onShowHello" />
+
+      <List
+         id="orderList"
+         items="{
+            path: 'orders>/value'
+         }">
+         <StandardListItem
+            title="{orders>customer}"
+            description="Lieferdatum: {orders>deliveryDate}" />
+      </List>
+   </VBox>
+</mvc:View>

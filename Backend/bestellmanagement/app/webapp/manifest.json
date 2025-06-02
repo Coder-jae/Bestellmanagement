@@ -1,6 +1,35 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "ui5.bestellmanagement"
+    "id": "ui5.bestellmanagement",
+    "dataSources": {
+      "invoiceRemote": {
+        "uri": "/odata/v4/OrderService/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "4.0"
+        }
+      }
+    }
+  },
+  "sap.ui5": {
+    "models": {
+      "invoice": {
+        "dataSource": "invoiceRemote",
+        "settings": {
+          "odataVersion": "4.0",
+          "defaultBindingMode": "TwoWay"
+        }
+      }
+    },
+    "dataSources": {
+      "invoiceRemote": {
+        "uri": "/odata/v4/OrderService/",
+        "type": "OData",
+        "settings": {
+          "odataVersion": "4.0"
+        }
+      }
+    }
   }
 }
